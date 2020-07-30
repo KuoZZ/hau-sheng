@@ -7,9 +7,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p 8080",
-	"start:production": "next start -p $PORT",
-	"heroku-postbuild": "npm run build"
+    "start": "next start -p $PORT",
+    "start:production": "next start -p $PORT",
+    "heroku-postbuild": "yarn build"
   },
   "dependencies": {
     "@types/bootstrap": "^4.5.0",
