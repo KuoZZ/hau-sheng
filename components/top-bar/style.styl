@@ -1,0 +1,38 @@
+.top-bar
+	margin: 20px 0
+	.logo
+		height: 80px
+		width: 80px
+		text-align: center
+		> div
+			font-size: 40px
+			font-weight: 700
+			display: flex
+			justify-content: center
+			img
+				height: 80px
+				margin-right: 5px
+
+	.contact-info
+		text-align: -webkit-right
+		cursor: pointer
+		> div
+			padding: 0 10px
+			text-align: center
+			border: 1px solid red
+			color: red
+			font-weight: 700
+			font-size: 28px
+			width: 240px
+			border-radius: 5px
+
+			&:hover,
+			&:focus,
+			&:active,
+			&:visited
+				color: white
+				background-color: red
+				text-decoration: none
+			
+			@media only screen and (max-width: 1000px)
+				display: none

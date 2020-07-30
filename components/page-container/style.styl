@@ -1,0 +1,31 @@
+.page-container
+  .navbar.navbar-expand-lg
+    margin-top: 20px
+    background-color: #f6da99
+    .justify-content-center.navbar-nav
+      > a,
+      > div
+        font-size: 20px
+        font-weight: 700
+        &:hover,
+        &:focus
+          color: #9c5e11
+        @media only screen and (min-width: 992px)
+          width: 20vw
+          text-align: center
+      .dropdown-menu
+        background-color: #f6da99
+        .dropdown-item
+          &:hover
+            background-color: #f6da99
+            color: #9c5e11
+
+  .img-link
+    &.navbar-nav
+      flex-direction: row
+    .nav-link
+      padding: 3px 0 0 0
+      margin-right: 5px
+      img
+        height: 40px
+        width: 40px
