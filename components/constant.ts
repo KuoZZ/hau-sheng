@@ -1,4 +1,4 @@
-const commonStorageUrl = "https://storage.googleapis.com/demp_files/public";
+const commonStorageUrl = "";
 const isLocal = true;
 const local_tel = "02-2550-4111";
 const tel = "0966-165-573";
