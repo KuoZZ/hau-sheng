@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p 8080",
+    "start": "next start -p $PORT",
     "start:production": "next start -p $PORT"
   },
   "dependencies": {
