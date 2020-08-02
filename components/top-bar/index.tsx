@@ -18,11 +18,12 @@ export default function TopBar() {
     <>
       <Head>
         <title>{constant.corpName}資產管理有限公司</title>
-                {metaList.map((meta) => (
+        {metaList.map((meta) => (
           <meta
+            key={meta}
             name={meta}
             property={`og:${meta}`}
-            content={`公司票貼，股票交割金代墊，個人信用貸款，土地/房屋二胎，汽/機車貸款。申辦容易，撥款快速。${constant.corpName}讓資金到位更容易。${constant.corpName}資產管理公司`}
+            content={`公司票貼，股票交割金代墊，個人信用貸款，土地/房屋二胎，汽/機車貸款。申辦容易，撥款快速。${constant.corpName}讓資金到位更容易。`}
           />
         ))}
         <link
@@ -35,7 +36,6 @@ export default function TopBar() {
           integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
           crossOrigin="anonymous"
         />
-        <script data-ad-client="ca-pub-4672655320046469" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Head>
       <Row className={PREFIX_CLASS}>
         <Col xs="4" sm="4" md="4"></Col>

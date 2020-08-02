@@ -11,7 +11,7 @@
         &:focus
           color: #9c5e11
         @media only screen and (min-width: 992px)
-          width: 20vw
+          width: 16vw
           text-align: center
       .dropdown-menu
         background-color: #f6da99
@@ -26,6 +26,13 @@
     .nav-link
       padding: 3px 0 0 0
       margin-right: 5px
+      &:hover
+        color: #9c5e11
       img
         height: 40px
         width: 40px
+
+  .navbar-light .navbar-nav
+    .show>.nav-link,
+    .nav-link:hover
+      color: #9c5e11

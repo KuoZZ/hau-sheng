@@ -10,7 +10,8 @@ const instgrame = "";
 const corpName = "華昇";
 const corpAddress = "新北市板橋區雙十路二段 209 號 21 樓";
 const corpAddressGoogleMap = "https://goo.gl/maps/pHNABRYoQiWVHWCg7";
-const googleForm = "https://docs.google.com/forms/d/e/1FAIpQLSe3gRIocKyOdaMKGKuHhAAUZbXmOSlOUQiM-9B42OQzwf_fLg/viewform?vc=0&c=0&w=1";
+const googleForm =
+  "https://docs.google.com/forms/d/e/1FAIpQLSe3gRIocKyOdaMKGKuHhAAUZbXmOSlOUQiM-9B42OQzwf_fLg/viewform?vc=0&c=0&w=1";
 
 const servicesTitleMap = {
   ENTERPRISE: "企業融資(L/C信用保證)",

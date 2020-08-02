@@ -7,7 +7,17 @@ import { convertedImgUrl } from "../../components/utils";
 import "./style.styl";
 
 const PREFIX_CLASS = "contact-us-page";
-const { fb, line, lineId, instgrame, tel, local_tel, cs, corpName, googleForm } = constant;
+const {
+  fb,
+  line,
+  lineId,
+  instgrame,
+  tel,
+  local_tel,
+  cs,
+  corpName,
+  googleForm,
+} = constant;
 
 export default function ContactUs() {
   function _handleClickContactUs(href: string, isBlank?: boolean) {
