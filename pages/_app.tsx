@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "react-calendar/dist/Calendar.css";
 import "antd/dist/antd.css";
+import "react-calendar/dist/Calendar.css";
 
 export default function MyApp({
   Component,
