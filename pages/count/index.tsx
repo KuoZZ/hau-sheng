@@ -13,7 +13,7 @@ export default function Count() {
   const [value, onChangeDate] = useState([new Date(), new Date()]);
   const [startDate, endDate] = value;
   const monthRate = new Big(yearRate || 0).div(1200);
-  const selectRange = endDate.getMonth() - startDate.getMonth() + 1;
+  const selectRange = getRange(endDate, startDate) + 1;
   const basicPerMonth = new Big(money || 0).div(selectRange);
 
   function _handleOnChangeDate(date: Date | Date[]) {
@@ -58,6 +58,7 @@ export default function Count() {
         onChange={_handleOnChangeDate}
         value={value}
         maxDetail="year"
+        view="month"
         minDetail="month"
         tileContent={(args: any) => {
           const { date } = args;
@@ -66,7 +67,7 @@ export default function Count() {
             date.getTime() >= startDate.getTime() &&
             date.getTime() <= endDate.getTime()
           ) {
-            const range = date.getMonth() - startDate.getMonth();
+            const range = getRange(date, startDate);
             const returnedLoan = basicPerMonth.times(range);
             let currentMomey = new Big(0);
 
@@ -91,5 +92,13 @@ export default function Count() {
         本試算表僅供參考，實際金額以當面服務洽談為準。
       </div>
     </PageContainer>
+  );
+}
+
+function getRange(endDate: Date, startDate: Date) {
+  return (
+    (endDate.getFullYear() - startDate.getFullYear()) * 12 +
+    endDate.getMonth() -
+    startDate.getMonth()
   );
 }
