@@ -122,18 +122,18 @@ function View({ router }: { router: any }) {
           <Row>
             <Col md="12" lg={{ span: 3, offset: 9 }}>
               <div>聯絡熱線({cs})</div>
-              <div
+              {local_tel && <div
                 className="tel"
                 onClick={() => _handleClickContactInfo(`Tel:${local_tel}`)}
               >
                 市話：{local_tel}
-              </div>
-              <div
+              </div>}
+              {tel && <div
                 className="tel"
                 onClick={() => _handleClickContactInfo(`Tel:${tel}`)}
               >
                 手機：{tel}
-              </div>
+              </div>}
               <img src={convertedImgUrl("/images/qr.jpg")} />
               <div className="line-id">Line ID: {lineId}</div>
               <a href={constant.line} target="_blank">
