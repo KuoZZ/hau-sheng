@@ -14,9 +14,9 @@ export default function FooterBar() {
       </div>
       <div className="copy-right">© All rights reserved.</div>
       <div className="tel">
-        <div>{`服務熱線(${constant.cs})`}</div>
-        <div>{`手機: ${constant.tel}`}</div>
-        <div>{`市話: ${constant.local_tel}`}</div>
+        {constant.cs && <div>{`服務熱線(${constant.cs})`}</div>}
+        {constant.tel && <div>{`手機: ${constant.tel}`}</div>}
+        {constant.local_tel && <div>{`市話: ${constant.local_tel}`}</div>}
       </div>
       <div className="location">
         <a href={constant.corpAddressGoogleMap}>{constant.corpAddress}</a>
