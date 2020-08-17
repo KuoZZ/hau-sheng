@@ -33,18 +33,18 @@ export default function ContactUs() {
           <h1>聯絡我們</h1>
           <div className="sub-title">
             服務熱線 ({cs})
-            <div
+            {tel && <div
               className="anchor"
               onClick={() => _handleClickContactUs(`Tel:${tel}`)}
             >
               手機: {tel}
-            </div>
-            <div
+            </div>}
+            {local_tel && <div
               className="anchor"
               onClick={() => _handleClickContactUs(`Tel:${local_tel}`)}
             >
               市話: {local_tel}
-            </div>
+            </div>}
           </div>
           <Row>
             <Col xs="12" lg="9" className="links">
