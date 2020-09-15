@@ -8,13 +8,20 @@ import "./style.styl";
 
 const PREFIX_CLASS = "page-container";
 const { servicesTitleMap } = constant;
-const { ENTERPRISE, PAYCHECK, STOCK, HOUSE, CAR, PERSONAL } = servicesTitleMap;
+const {
+  ENTERPRISE,
+  PAYCHECK,
+  STOCK,
+  HOUSE,
+//   CAR,
+  PERSONAL,
+} = servicesTitleMap;
 const pageDropdownMap = {
   [ENTERPRISE]: "ENTERPRISE",
   [PAYCHECK]: "PAYCHECK",
   [STOCK]: "STOCK",
   [HOUSE]: "HOUSE",
-  [CAR]: "CAR",
+//   [CAR]: "CAR",
   [PERSONAL]: "PERSONAL",
 };
 
