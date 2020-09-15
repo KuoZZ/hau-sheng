@@ -27,7 +27,7 @@ function CustomizeNavbar({
               </NavDropdown.Item>
             ))}
           </NavDropdown>
-          <Nav.Link onClick={() => push("/news")}>最新消息</Nav.Link>
+          {/*<Nav.Link onClick={() => push("/news")}>最新消息</Nav.Link>*/}
           <Nav.Link onClick={() => push("/contact-us")}>聯絡我們</Nav.Link>
           <Nav.Link onClick={() => push("/count")}>金額試算</Nav.Link>
           <Nav className="img-link">
