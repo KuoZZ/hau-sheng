@@ -14,12 +14,11 @@ const googleForm =
   "https://docs.google.com/forms/d/e/1FAIpQLSe3gRIocKyOdaMKGKuHhAAUZbXmOSlOUQiM-9B42OQzwf_fLg/viewform?vc=0&c=0&w=1";
 
 const servicesTitleMap = {
-  ENTERPRISE: "企業融資(L/C信用保證)",
-  PAYCHECK: "支票客票融資",
-  STOCK: "股票交割代墊款",
-  HOUSE: "房屋土地二胎融資",
-  CAR: "汽車融資",
-  PERSONAL: "個人信用融資",
+  ENTERPRISE: "企業工商",
+  PAYCHECK: "支票融資",
+  STOCK: "股票代墊款",
+  HOUSE: "土地房屋二胎",
+  PERSONAL: "其他諮詢",
 };
 
 const news = [
