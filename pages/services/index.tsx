@@ -9,7 +9,14 @@ import "./style.styl";
 const PREFIX_CLASS = "services-page";
 const { servicesTitleMap } = constant;
 const { pageDropdownMap } = PageContainer;
-const { ENTERPRISE, PAYCHECK, STOCK, HOUSE, PERSONAL, CAR } = servicesTitleMap;
+const {
+  ENTERPRISE,
+  PAYCHECK,
+  STOCK,
+  HOUSE,
+  PERSONAL,
+//   CAR,
+} = servicesTitleMap;
 const servicesContentMap = {
   [ENTERPRISE]: [
     {
@@ -85,25 +92,25 @@ const servicesContentMap = {
       content: "1. 身分證正本<br/>2. 第二證件正本 (駕照或健保卡)",
     },
   ],
-  [CAR]: [
-    {
-      title: "產品特色",
-      content:
-        "1. 各型車款皆可借款，當日立即撥款不限車齡，不限車種，免留車<br/>2. 新車、中古車、分期車、二胎車皆可輕鬆申請",
-    },
-    {
-      title: "申請條件",
-      content:
-        "1. 年滿20至57歲，職業不限<br/>2. 八大行業、攤販、均可申請<br/>3. 依權威車訊雜誌內容評估，最高可貸車價的兩倍。快速放款，新車、或分期付期滿一年、中古車皆可申請",
-    },
-    { title: "貸款額度", content: "依擔保品條件評估" },
-    { title: "貸款利率", content: "以月計算 (1.65%起)" },
-    {
-      title: "檢附文件",
-      content:
-        "<p style='font-weight:700'>個人戶</p>1. 身分證正本<br/>2. 汽車行照正本<br/>3. 新領牌照登記書<br/><p style='font-weight:700; margin-top: 16px;'>公司車車主</p>1. 營利事業登記證影本<br/>2. 負責人身分證正本<br/>3. 公司大小章<br/>4. 汽車行照正本<br/>5. 新領牌照登記書",
-    },
-  ],
+//   [CAR]: [
+//     {
+//       title: "產品特色",
+//       content:
+//         "1. 各型車款皆可借款，當日立即撥款不限車齡，不限車種，免留車<br/>2. 新車、中古車、分期車、二胎車皆可輕鬆申請",
+//     },
+//     {
+//       title: "申請條件",
+//       content:
+//         "1. 年滿20至57歲，職業不限<br/>2. 八大行業、攤販、均可申請<br/>3. 依權威車訊雜誌內容評估，最高可貸車價的兩倍。快速放款，新車、或分期付期滿一年、中古車皆可申請",
+//     },
+//     { title: "貸款額度", content: "依擔保品條件評估" },
+//     { title: "貸款利率", content: "以月計算 (1.65%起)" },
+//     {
+//       title: "檢附文件",
+//       content:
+//         "<p style='font-weight:700'>個人戶</p>1. 身分證正本<br/>2. 汽車行照正本<br/>3. 新領牌照登記書<br/><p style='font-weight:700; margin-top: 16px;'>公司車車主</p>1. 營利事業登記證影本<br/>2. 負責人身分證正本<br/>3. 公司大小章<br/>4. 汽車行照正本<br/>5. 新領牌照登記書",
+//     },
+//   ],
 };
 
 function Services({ router }: { router: any }) {
