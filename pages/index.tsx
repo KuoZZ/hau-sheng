@@ -84,7 +84,7 @@ function View({ router }: { router: any }) {
           ))}
         </Row>
       </section>
-      <section className="news">
+      {/*<section className="news">
         <Row>
           <Col md="12" lg="4">
             <img
@@ -108,7 +108,7 @@ function View({ router }: { router: any }) {
             </div>
           </Col>
         </Row>
-      </section>
+      </section>*/}
       <section className="contact-us">
         <div
           style={{
